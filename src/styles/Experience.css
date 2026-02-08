@@ -1,0 +1,82 @@
+.experience-section {
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    /* Initial padding */
+}
+
+/* Timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background: var(--glass-border);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 11px;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-purple);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-purple);
+    z-index: 1;
+}
+
+.timeline-content {
+    margin-left: 40px;
+}
+
+.exp-header {
+    margin-bottom: 1rem;
+}
+
+.exp-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.exp-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--accent-cyan);
+    flex-wrap: wrap;
+}
+
+.exp-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.exp-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.exp-list li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.exp-list li::marker {
+    color: var(--accent-purple);
+}

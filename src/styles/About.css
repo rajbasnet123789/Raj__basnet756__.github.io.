@@ -1,0 +1,100 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.highlight {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+/* Education Card */
+.education-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.edu-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
+}
+
+.edu-icon {
+    font-size: 2rem;
+    color: var(--accent-purple);
+}
+
+.edu-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.edu-item h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.edu-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.edu-year {
+    font-size: 0.9rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    background: rgba(0, 242, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.edu-desc-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.edu-gpa {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.edu-status {
+    font-weight: 400;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
